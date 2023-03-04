@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rising Challenges</title>
+	<link rel="stylesheet" href="css/fonts.css">
+
+	<style>
+		* {
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("bg.jpg");
+  background-size: cover;
+}
+
+
+
+.wrapper {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-family: "3dsweb", sans-serif;
+}
+
+
+.card {
+  width: 24rem;
+  height: 20rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #ffffff;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  background: #000000;
+  margin: 3.5rem;
+}
+.card img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  transition: opacity 0.2s ease-out;
+}
+.card h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "3dsweb", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.card p, .card a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+  font-size: 1.5rem;
+  font-family: "3dsweb", sans-serif;
+}
+.card p {
+  inset: auto auto 80px 30px;
+}
+.card strong {
+  font-size: 1.7rem;
+}
+.card:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: opacity inset 0.3s ease-out;
+  opacity: 0;
+}
+.card:hover p, .card:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+.card:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 0.4;
+}
+
+.material-symbols-outlined {
+  vertical-align: middle;
+}
+	</style>
+</head>
+<body>
+
+<div class="wrapper">
+	
+  <div class="card">
+    <img src="stamp.jpg" alt="">
+    <div class="card-content">
+      <h2>
+        Volume
+      </h2>
+      <p>
+        <strong>Volume</strong> <br>
+        <strong>More stamping dies</strong> are needed as product variants increase.
+      </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="metal.jpg" alt="">
+    <div class="card-content">
+      <h2>
+        Visibility
+      </h2>
+      <p>
+        <strong>Visibility</strong> <br>
+        Need an <strong>early estimation for cost of dies and material</strong> to plan production.
+      </p>
+    </div>
+  </div>
+
+    <div class="card">
+    <img src="error.jpg" alt="">
+    <div class="card-content">
+      <h2>
+        Integration
+      </h2>
+      <p>
+        <strong>Integration</strong> <br>
+        Discontinuity from concept to detailed design leads to <strong>errors, inconsistencies and delays</strong>.
+      </p>
+    </div>
+  </div>
+
+ 
+  <div class="card">
+    <img src="time.jpg" alt="">
+    <div class="card-content">
+      <h2>
+        Time
+      </h2>
+      <p>
+        <strong>Time</strong> <br>
+        Stamping dies are on the product manufacturing critical path leading to <strong>huge time pressure</strong>.
+      </p>
+    </div>
+  </div>
+
+    <div class="card">
+    <img src="design.jpg" alt="">
+    <div class="card-content">
+      <h2>
+        Reactivity
+      </h2>
+      <p>
+        <strong>Reactivity</strong> <br>
+        Need to <strong>quickly update</strong> the die design when the part design changes.
+      </p>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
